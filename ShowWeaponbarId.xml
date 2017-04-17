@@ -14,7 +14,7 @@
             </OnMoveStop>
 
             <Controls>
-                <Label name="$(parent)Label" width="40" height="60" font="ShowWeaponIdH1" inheritAlpha="true" color="FF0000"
+                <Label name="$(parent)Label" width="40" height="60" font="ShowWeaponIdH1" inheritAlpha="true" color="FFFFFF"
                     wrapMode="TRUNCATE" verticalAlignment="TOP" horizontalAlignment="CENTER" text="ShowWeaponbarId">
                     <Anchor point="TOP" relativeTo="$(parent)" relativePoint="TOP" />
                 </Label>
