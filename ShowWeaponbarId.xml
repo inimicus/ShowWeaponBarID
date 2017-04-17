@@ -1,0 +1,24 @@
+<GuiXml>
+	<!-- default font -->
+    <Font name="ShowWeaponIdH1" font="$(BOLD_FONT)|60|soft-shadow-thick" />
+ 
+    <Controls>
+	<!-- make it moveable: mouseEnabled="true" movable="true" clampedToScreen="true" -->
+        <TopLevelControl name="ShowWeaponbarIdIndicator" mouseEnabled="true" movable="true" clampedToScreen="true">
+            <Dimensions x="40" y="60" />
+            <Anchor point="BOTTOM" relativeTo="GuiRoot" relativePoint="CENTER" offsetY="-20" />
+
+            <!-- OnMoveStop event (when user stopped moving indicator) => call "OnIndicatorMoveStop"-EventHandler -->
+            <OnMoveStop>
+            ShowWeaponbarId.OnIndicatorMoveStop()
+            </OnMoveStop>
+
+            <Controls>
+                <Label name="$(parent)Label" width="40" height="60" font="ShowWeaponIdH1" inheritAlpha="true" color="FF0000"
+                    wrapMode="TRUNCATE" verticalAlignment="TOP" horizontalAlignment="CENTER" text="ShowWeaponbarId">
+                    <Anchor point="TOP" relativeTo="$(parent)" relativePoint="TOP" />
+                </Label>
+            </Controls>
+        </TopLevelControl>
+    </Controls>
+</GuiXml>

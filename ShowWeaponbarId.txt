@@ -1,0 +1,9 @@
+## Title: ShowWeaponbarId
+## APIVersion: 100017
+## SavedVariables: ShowWeaponbarIdSavedVariables
+## Description: This addon adds a movable label that shows your current WeaponBar-Id
+## Version: 1.2.0
+## Author: kokoba
+
+ShowWeaponbarId.xml
+ShowWeaponbarId.lua
